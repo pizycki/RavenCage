@@ -7,7 +7,7 @@ Containers for running RavenDB server instances inside containers.
 * Windows Server Containers: [official site at MSDN](https://msdn.microsoft.com/virtualization/windowscontainers/containers_welcome)
 
 ## Versions
-|RavenDB version|Git branch|Technology|Base Image|Status|Commentary|
+|RavenDB version|GitHub|Engine|Base Image|Status|Notes|
 |:--|:--|:--|:--|:--|:--|
 |`4.0`|[4.0](https://github.com/pizycki/RavenCage-4.0)|`Docker`|[Ubuntu](https://hub.docker.com/_/ubuntu/)|Planned|Waiting for stable `RavenDB:4.0`.|
 |`3.5 (3.5.0-rc-35166)`|[3.5](https://github.com/pizycki/RavenCage-3.5)|`Windows Containers`|[Windows Server Core](https://hub.docker.com/r/microsoft/windowsservercore/)|Done||
