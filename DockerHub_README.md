@@ -1,6 +1,8 @@
 #RavenCage
 _RavenDB in Docker container_
 
+ [![GitHub logo](https://github.global.ssl.fastly.net/favicon.ico) RavenCage](https://github.com/pizycki/RavenCage)
+
 > **Some of images are based on [microsoft/windowsservercore](https://hub.docker.com/r/microsoft/windowsservercore/) and will run only on Windows! For more info, see GitHub repo `README.md` file.**
 
 ## Version map
