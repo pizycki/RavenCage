@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Header 1 &mdash; RavenCage 3.5 documentation</title>
+  <title>RavenCage - dockerized RavenDB &mdash; RavenCage 3.5 documentation</title>
   
 
   
@@ -84,11 +84,46 @@
             
                 <!-- Local TOC -->
                 <div class="local-toc"><ul>
-<li><a class="reference internal" href="#">Header 1</a><ul>
-<li><a class="reference internal" href="#header-2">Header 2</a></li>
-<li><a class="reference internal" href="#headero-2">Headero 2</a></li>
+<li><a class="reference internal" href="#">RavenCage - dockerized RavenDB</a><ul>
+<li><a class="reference internal" href="#links">Links</a></li>
+<li><a class="reference internal" href="#versions">Versions</a><ul>
+<li><a class="reference internal" href="#released">Released</a><ul>
+<li><a class="reference internal" href="#ravendb-stable-3-5-latest">RavenDB Stable 3.5 (latest)</a></li>
+<li><a class="reference internal" href="#ravendb-3-5-rc">RavenDB 3.5 RC</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#planned">Planned</a><ul>
+<li><a class="reference internal" href="#ravendb-4">RavenDB 4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#requirements">Requirements</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#container-usage">Container usage</a><ul>
+<li><a class="reference internal" href="#windows-server-2016-windows-server-containers">Windows Server 2016 (Windows Server Containers)</a><ul>
+<li><a class="reference internal" href="#run-in-background">Run in background</a></li>
+<li><a class="reference internal" href="#run-in-console-and-debug-mode">Run in console and debug mode</a></li>
+<li><a class="reference internal" href="#map-storage">Map storage</a></li>
+<li><a class="reference internal" href="#map-ravendb-listen-port">Map RavenDB listen port</a></li>
+<li><a class="reference internal" href="#compose">Compose</a></li>
+<li><a class="reference internal" href="#swarm">Swarm</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#windows-10-hyper-v-containers">Windows 10 (Hyper-V Containers)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#repository">Repository</a><ul>
+<li><a class="reference internal" href="#how-to-upgrade-ravendb-in-container">How to upgrade RavenDB in container</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#faq">FAQ</a><ul>
+<li><a class="reference internal" href="#i-cannot-access-my-ravendb-server-website">I cannot access my RavenDB server website.</a></li>
+<li><a class="reference internal" href="#can-i-run-windows-containers-without-hyper-v-on-windows-10">Can I run Windows Containers without Hyper-V on Windows 10?</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#very-fast-snippets">Very Fast Snippets</a></li>
 </ul>
 </div>
             
@@ -119,7 +154,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="#">Docs</a> &raquo;</li>
       
-    <li>Header 1</li>
+    <li>RavenCage - dockerized RavenDB</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -133,20 +168,161 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="header-1">
-<span id="header-1"></span><h1>Header 1<a class="headerlink" href="#header-1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="header-2">
-<span id="header-2"></span><h2>Header 2<a class="headerlink" href="#header-2" title="Permalink to this headline">¶</a></h2>
-<p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker</p>
-<p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Lorem</span> <span class="n">Ipsum</span> <span class="n">jest</span> <span class="n">tekstem</span> <span class="n">stosowanym</span> <span class="n">jako</span> <span class="n">przykładowy</span> <span class="n">wypełniacz</span> <span class="n">w</span> <span class="n">przemyśle</span> <span class="n">poligraficznym</span><span class="o">.</span> <span class="n">Został</span> <span class="n">po</span> <span class="n">raz</span> <span class="n">pierwszy</span> <span class="n">użyty</span> <span class="n">w</span> <span class="n">XV</span> <span class="n">w</span><span class="o">.</span> <span class="n">przez</span> <span class="n">nieznanego</span> <span class="n">drukarza</span> <span class="n">do</span> <span class="n">wypełnienia</span> <span class="n">tekstem</span> <span class="n">próbnej</span> <span class="n">książki</span><span class="o">.</span> <span class="n">Pięć</span> <span class="n">wieków</span> <span class="n">później</span> <span class="n">zaczął</span> <span class="n">być</span> <span class="n">używany</span> <span class="n">przemyśle</span> <span class="n">elektronicznym</span><span class="p">,</span> <span class="n">pozostając</span> <span class="n">praktycznie</span> <span class="n">niezmienionym</span><span class="o">.</span> <span class="n">Spopularyzował</span> <span class="n">się</span> <span class="n">w</span> <span class="n">latach</span> <span class="mf">60.</span> <span class="n">XX</span> <span class="n">w</span><span class="o">.</span> <span class="n">wraz</span> <span class="n">z</span> <span class="n">publikacją</span> <span class="n">arkuszy</span> <span class="n">Letrasetu</span><span class="p">,</span> <span class="n">zawierających</span> <span class="n">fragmenty</span> <span class="n">Lorem</span> <span class="n">Ipsum</span><span class="p">,</span> <span class="n">a</span> <span class="n">ostatnio</span> <span class="n">z</span> <span class="n">zawierającym</span> <span class="n">różne</span> <span class="n">wersje</span> <span class="n">Lorem</span> <span class="n">Ipsum</span> <span class="n">oprogramowaniem</span> <span class="n">przeznaczonym</span> <span class="n">do</span> <span class="n">realizacji</span> <span class="n">druków</span> <span class="n">na</span> <span class="n">komputerach</span> <span class="n">osobistych</span><span class="p">,</span> <span class="n">jak</span> <span class="n">Aldus</span> <span class="n">PageMaker</span>
+  <div class="section" id="ravencage-dockerized-ravendb">
+<span id="ravencage-dockerized-ravendb"></span><h1>RavenCage - dockerized RavenDB<a class="headerlink" href="#ravencage-dockerized-ravendb" title="Permalink to this headline">¶</a></h1>
+<p>Containers with RavenDB server inside containers.</p>
+<div class="section" id="links">
+<span id="links"></span><h2>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>RavenCage on DockerHub: <a class="reference external" href="https://hub.docker.com/r/pizycki/ravendb/">pizycki/ravendb</a></li>
+<li>RavenDB: <a class="reference external" href="https://ravendb.net/">official site</a></li>
+<li>Docker: <a class="reference external" href="https://www.docker.com/">official site</a></li>
+<li>Windows Server Containers: <a class="reference external" href="https://msdn.microsoft.com/virtualization/windowscontainers/containers_welcome">official site at MSDN</a></li>
+</ul>
+</div>
+<div class="section" id="versions">
+<span id="versions"></span><h2>Versions<a class="headerlink" href="#versions" title="Permalink to this headline">¶</a></h2>
+<p>Images contain only <code class="docutils literal"><span class="pre">stable</span></code> builds of RavenDB. All <code class="docutils literal"><span class="pre">unstable</span></code> releases will be skipped.</p>
+<div class="section" id="released">
+<span id="released"></span><h3>Released<a class="headerlink" href="#released" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ravendb-stable-3-5-latest">
+<span id="ravendb-stable-3-5-latest"></span><h4>RavenDB Stable 3.5 (latest)<a class="headerlink" href="#ravendb-stable-3-5-latest" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>Tag:</strong> <code class="docutils literal"><span class="pre">3.5.179</span></code>, <code class="docutils literal"><span class="pre">latest</span></code></li>
+<li><strong>RavenDB version</strong>: 3.5 Stable</li>
+<li><strong>RavenDB release</strong>: 35179</li>
+<li><strong>Base image:</strong> <a class="reference external" href="https://hub.docker.com/r/microsoft/windowsservercore/">Windows Server Core</a></li>
+</ul>
+</div>
+<div class="section" id="ravendb-3-5-rc">
+<span id="ravendb-3-5-rc"></span><h4>RavenDB 3.5 RC<a class="headerlink" href="#ravendb-3-5-rc" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><strong>Tag:</strong> <code class="docutils literal"><span class="pre">3.5.166</span></code></li>
+<li><strong>RavenDB version</strong>: 3.5-RC</li>
+<li><strong>RavenDB release</strong>: 35166</li>
+<li><strong>Base image:</strong> <a class="reference external" href="https://hub.docker.com/r/microsoft/windowsservercore/">Windows Server Core</a></li>
+</ul>
+<p>RavenDB 3.0 and 2.5 are skipped.</p>
+</div>
+</div>
+<div class="section" id="planned">
+<span id="planned"></span><h3>Planned<a class="headerlink" href="#planned" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="ravendb-4">
+<span id="ravendb-4"></span><h4>RavenDB 4<a class="headerlink" href="#ravendb-4" title="Permalink to this headline">¶</a></h4>
+<p>Images contain only <code class="docutils literal"><span class="pre">stable</span></code> builds of RavenDB. All <code class="docutils literal"><span class="pre">unstable</span></code> releases will be skipped.
+<strong>Tag:</strong> -
+<strong>RavenDB version</strong>: -
+<strong>RavenDB release</strong>: -
+<strong>Base image:</strong> <a class="reference external" href="https://hub.docker.com/_/ubuntu/">Ubuntu</a>/<a class="reference external" href="https://hub.docker.com/_/alpine/">Alpine</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="requirements">
+<span id="requirements"></span><h2>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h2>
+<p>In prior to use RavenCage you need to have one of the following:</p>
+<ul class="simple">
+<li>Windows 2016 build <code class="docutils literal"><span class="pre">14393</span></code> with installed Windows Server Constainers or Hyper-V Containers</li>
+<li>Windows 10 build <code class="docutils literal"><span class="pre">14393.222</span></code> with installed Hyper-V Containers</li>
+</ul>
+<p>To check your OS build, <code class="docutils literal"><span class="pre">Win+R</span></code> and type <code class="docutils literal"><span class="pre">winver</span></code>.</p>
+<p>To install Windows Containers on your machine follow on of there guides: <a class="reference external" href="https://msdn.microsoft.com/pl-pl/virtualization/windowscontainers/quick_start/quick_start_windows_server">Windows Server 2016</a>, <a class="reference external" href="https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10">Windows 10</a></p>
+</div>
+</div>
+<div class="section" id="container-usage">
+<span id="container-usage"></span><h1>Container usage<a class="headerlink" href="#container-usage" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="windows-server-2016-windows-server-containers">
+<span id="windows-server-2016-windows-server-containers"></span><h2>Windows Server 2016 (Windows Server Containers)<a class="headerlink" href="#windows-server-2016-windows-server-containers" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="run-in-background">
+<span id="run-in-background"></span><h3>Run in background<a class="headerlink" href="#run-in-background" title="Permalink to this headline">¶</a></h3>
+<p>Run server on port <code class="docutils literal"><span class="pre">8080</span></code> as service.</p>
+<div class="highlight-docker"><div class="highlight"><pre><span></span>docker run -d pizycki/ravendb:latest
 </pre></div>
 </div>
 </div>
-<div class="section" id="headero-2">
-<span id="headero-2"></span><h2>Headero 2<a class="headerlink" href="#headero-2" title="Permalink to this headline">¶</a></h2>
-<p><img alt="alt image" src="https://www.nasa.gov/sites/default/files/styles/image_card_4x3_ratio/public/thumbnails/image/leisa_christmas_false_color.png?itok=Jxf0IlS4" /></p>
-<p>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym. Został po raz pierwszy użyty w XV w. przez nieznanego drukarza do wypełnienia tekstem próbnej książki. Pięć wieków później zaczął być używany przemyśle elektronicznym, pozostając praktycznie niezmienionym. Spopularyzował się w latach 60. XX w. wraz z publikacją arkuszy Letrasetu, zawierających fragmenty Lorem Ipsum, a ostatnio z zawierającym różne wersje Lorem Ipsum oprogramowaniem przeznaczonym do realizacji druków na komputerach osobistych, jak Aldus PageMaker</p>
+<div class="section" id="run-in-console-and-debug-mode">
+<span id="run-in-console-and-debug-mode"></span><h3>Run in console and debug mode<a class="headerlink" href="#run-in-console-and-debug-mode" title="Permalink to this headline">¶</a></h3>
+<p>Run server on port <code class="docutils literal"><span class="pre">8080</span></code> in <code class="docutils literal"><span class="pre">debug</span></code> mode and interactive console.</p>
+<div class="highlight-docker"><div class="highlight"><pre><span></span>docker run -it -e <span class="nv">mode</span><span class="o">=</span>debug pizycki/ravendb:latest
+</pre></div>
+</div>
+<blockquote>
+<div>Running on IIS is not supported here.</div></blockquote>
+</div>
+<div class="section" id="map-storage">
+<span id="map-storage"></span><h3>Map storage<a class="headerlink" href="#map-storage" title="Permalink to this headline">¶</a></h3>
+<p>Map directory where your databases will be stored to <code class="docutils literal"><span class="pre">C:\db\</span></code> on your host. You can also map place in your network.</p>
+<div class="highlight-docker"><div class="highlight"><pre><span></span>docker run -d -v C:<span class="se">\d</span>b<span class="se">\:</span>C:<span class="se">\R</span>avenDB<span class="se">\S</span>erver<span class="se">\D</span>atabases<span class="se">\ </span>pizycki/ravendb:latest 
+</pre></div>
+</div>
+</div>
+<div class="section" id="map-ravendb-listen-port">
+<span id="map-ravendb-listen-port"></span><h3>Map RavenDB listen port<a class="headerlink" href="#map-ravendb-listen-port" title="Permalink to this headline">¶</a></h3>
+<p>Make you container listen on port <code class="docutils literal"><span class="pre">5555</span></code></p>
+<div class="highlight-docker"><div class="highlight"><pre><span></span>docker run -d -p 5555:8080 pizycki/ravendb:latest 
+</pre></div>
+</div>
+<p>Both <strong>volume</strong> and <strong>port</strong> mapping work with either <code class="docutils literal"><span class="pre">service</span></code> and <code class="docutils literal"><span class="pre">debug</span></code> mode.</p>
+</div>
+<div class="section" id="compose">
+<span id="compose"></span><h3>Compose<a class="headerlink" href="#compose" title="Permalink to this headline">¶</a></h3>
+<p>Run with other dockerized apps
+TBD</p>
+</div>
+<div class="section" id="swarm">
+<span id="swarm"></span><h3>Swarm<a class="headerlink" href="#swarm" title="Permalink to this headline">¶</a></h3>
+<p>RavenDB clusters</p>
+<p>TBD</p>
+</div>
+</div>
+<div class="section" id="windows-10-hyper-v-containers">
+<span id="windows-10-hyper-v-containers"></span><h2>Windows 10 (Hyper-V Containers)<a class="headerlink" href="#windows-10-hyper-v-containers" title="Permalink to this headline">¶</a></h2>
+<p>TBD</p>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="repository">
+<span id="repository"></span><h1>Repository<a class="headerlink" href="#repository" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="how-to-upgrade-ravendb-in-container">
+<span id="how-to-upgrade-ravendb-in-container"></span><h2>How to upgrade RavenDB in container<a class="headerlink" href="#how-to-upgrade-ravendb-in-container" title="Permalink to this headline">¶</a></h2>
+<p>Modify your <code class="docutils literal"><span class="pre">Dockerfile</span></code> and <code class="docutils literal"><span class="pre">powershell</span></code> scripts. If you modify any of <code class="docutils literal"><span class="pre">powershell</span></code> script files <strong>you have to</strong>  add <code class="docutils literal"><span class="pre">--no-cache</span></code> flag while building new image. Another way is to  delete layer containing <code class="docutils literal"><span class="pre">ADD</span></code>/<code class="docutils literal"><span class="pre">COPY</span></code> instruction with modified script file. Most common change in container image will be RavenDB ZIP file URL.
+For more information how layer caching in Docker works, see <a class="reference external" href="https://docs.docker.com/engine/userguide/eng-image/dockerfile_best-practices/#/build-cache">this article</a>.</p>
+<p>Build image with this command. Remember to replace <code class="docutils literal"><span class="pre">&lt;tag&gt;</span></code> with actual tag, i.e.: RavenDB version.</p>
+<div class="highlight-docker"><div class="highlight"><pre><span></span>docker build -t pizycki/ravendb:&lt;tag&gt; .
+</pre></div>
+</div>
+<p>If it&#8217;s the latest version of RavenDB, tag new created images as <code class="docutils literal"><span class="pre">latest</span></code>.</p>
+<div class="highlight-docker"><div class="highlight"><pre><span></span>docker tag pizycki/ravendb:&lt;tag&gt; pizycki/ravendb:latest
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="faq">
+<span id="faq"></span><h1>FAQ<a class="headerlink" href="#faq" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="i-cannot-access-my-ravendb-server-website">
+<span id="i-cannot-access-my-ravendb-server-website"></span><h2>I cannot access my RavenDB server website.<a class="headerlink" href="#i-cannot-access-my-ravendb-server-website" title="Permalink to this headline">¶</a></h2>
+<p>There is something wrong with <code class="docutils literal"><span class="pre">localhost</span></code>, Win2016 and Docker. I have no idea what can that be.
+To get access to RavenDB website, get container IP. Simply type <code class="docutils literal"><span class="pre">docker</span> <span class="pre">inspect</span> <span class="pre">&lt;container_ID&gt;</span></code> and look for <code class="docutils literal"><span class="pre">Networks.IPAddress</span></code>.
+Make sure the port you mapped to is open in your firewall settings!</p>
+</div>
+<div class="section" id="can-i-run-windows-containers-without-hyper-v-on-windows-10">
+<span id="can-i-run-windows-containers-without-hyper-v-on-windows-10"></span><h2>Can I run Windows Containers without Hyper-V on Windows 10?<a class="headerlink" href="#can-i-run-windows-containers-without-hyper-v-on-windows-10" title="Permalink to this headline">¶</a></h2>
+<p>Right now, Windows 10 allows to run containers only in Hyper-V mode.</p>
+</div>
+</div>
+<div class="section" id="very-fast-snippets">
+<span id="very-fast-snippets"></span><h1>Very Fast Snippets<a class="headerlink" href="#very-fast-snippets" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-docker"><div class="highlight"><pre><span></span><span class="c"># Remove all old containers</span>
+docker rm <span class="k">$(</span>docker ps -q -f <span class="nv">status</span><span class="o">=</span>exited<span class="k">)</span>
+
+<span class="c"># Delete all containers (that are not started) </span>
+docker rm <span class="k">$(</span>docker ps -a -q<span class="k">)</span>
+
+<span class="c"># Delete all images</span>
+docker rmi <span class="k">$(</span>docker images -q<span class="k">)</span>
+
+<span class="c"># Customize docker containers list</span>
+docker ps --format <span class="s1">&#39;{{.Names}}\t{{.Image}}&#39;</span> 
+</pre></div>
 </div>
 </div>
 
