@@ -2,26 +2,26 @@
 
 Containers with RavenDB server inside containers.
 
-## Links
+# Links
 * RavenCage on DockerHub: [pizycki/ravendb](https://hub.docker.com/r/pizycki/ravendb/)
 * RavenDB: [official site](https://ravendb.net/)
 * Docker: [official site](https://www.docker.com/)
 * Windows Server Containers: [official site at MSDN](https://msdn.microsoft.com/virtualization/windowscontainers/containers_welcome)
 
-## Versions
+# Versions
 
 Images contain only `stable` builds of RavenDB. All `unstable` releases will be skipped.
 
-### Released
+## Released
 
-#### RavenDB Stable 3.5 (latest)
+### RavenDB Stable 3.5 (latest)
 * **Tag:** `3.5.179`, `latest`
 * **RavenDB version**: 3.5 Stable
 * **RavenDB release**: 35179
 * **Base image:** [Windows Server Core](https://hub.docker.com/r/microsoft/windowsservercore/)
 
 
-#### RavenDB 3.5 RC
+### RavenDB 3.5 RC
 * **Tag:** `3.5.166`
 * **RavenDB version**: 3.5-RC
 * **RavenDB release**: 35166
@@ -30,9 +30,9 @@ Images contain only `stable` builds of RavenDB. All `unstable` releases will be 
 
 RavenDB 3.0 and 2.5 are skipped.
 
-### Planned
+## Planned
 
-#### RavenDB 4
+### RavenDB 4
 Images contain only `stable` builds of RavenDB. All `unstable` releases will be skipped.
 **Tag:** -
 **RavenDB version**: -
@@ -40,7 +40,7 @@ Images contain only `stable` builds of RavenDB. All `unstable` releases will be 
 **Base image:** [Ubuntu](https://hub.docker.com/_/ubuntu/)/[Alpine](https://hub.docker.com/_/alpine/)
 
 
-## Requirements
+# Requirements
 
 In prior to use RavenCage you need to have one of the following:
 
