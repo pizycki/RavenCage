@@ -9,9 +9,8 @@ Containers for running RavenDB server instances inside containers.
 ## Versions
 |RavenDB version|GitHub|Engine|Base Image|Status|Notes|
 |:--|:--|:--|:--|:--|:--|
-|`4.0`|**[RavenCage-4.0](https://github.com/pizycki/RavenCage-4.0)**|`Docker`|[Ubuntu](https://hub.docker.com/_/ubuntu/)|Planned|Waiting for stable `RavenDB:4.0`.|
-|`3.5 (3.5.0-35179)`|**[RavenCage-3.5](https://github.com/pizycki/RavenCage-3.5)**|`Windows Containers`|[Windows Server Core](https://hub.docker.com/r/microsoft/windowsservercore/)|Done||
-|`3.5 (3.5.0-rc-35166)`|**[RavenCage-3.5](https://github.com/pizycki/RavenCage-3.5)**|`Windows Containers`|[Windows Server Core](https://hub.docker.com/r/microsoft/windowsservercore/)|Done||
+|`4.0`|**[RavenCage-4.0](https://github.com/pizycki/RavenCage-4.0)**|`Docker`, `Windows Containers`|[Ubuntu](https://hub.docker.com/_/ubuntu/), [Windows Server Core](https://hub.docker.com/r/microsoft/windowsservercore/)|In progress||
+|`3.5 (3.5.0-35181)`|**[RavenCage-3.5.2](https://github.com/pizycki/RavenCage-3.5)**|`Windows Containers`|[Windows Server Core](https://hub.docker.com/r/microsoft/windowsservercore/)|Done||
 |`3.0 (3.0.30153)`|-|-|-|Skipped||
 |`2.5 (2.5.2996)`|-|-|-|Skipped||
 
